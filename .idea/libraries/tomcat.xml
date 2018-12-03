@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="tomcat">
+    <CLASSES>
+      <root url="jar://F:/快捷方式/else/下载、/彪彪/apache-tomcat-8.0.46/lib/jsp-api.jar!/" />
+      <root url="jar://F:/快捷方式/else/下载、/彪彪/apache-tomcat-8.0.46/lib/servlet-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

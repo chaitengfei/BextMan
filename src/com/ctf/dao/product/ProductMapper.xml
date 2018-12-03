@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ctf.dao.product.ProductMapper">
+
+    <select id="getProdectList" resultType="com.ctf.entity.Product">
+        select * from
+          product
+    </select>
+    <select id="getQuantity" resultType="int">
+
+            SELECT
+                quantity
+
+                FROM
+                product
+                WHERE productName = #{productName}
+    </select>
+    <update id="updateQuantity">
+                  UPDATE product
+            SET
+            quantity = #{quantity}
+            WHERE
+            id = #{id}
+    </update>
+    <insert id="insert">
+
+    </insert>
+
+
+
+</mapper>

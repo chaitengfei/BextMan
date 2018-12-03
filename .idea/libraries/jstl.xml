@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="jstl">
+    <CLASSES>
+      <root url="jar://F:/快捷方式/else/jar包/jstl所需jar/jstl.jar!/" />
+      <root url="jar://F:/快捷方式/else/jar包/jstl所需jar/standard.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

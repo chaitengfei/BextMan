@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="upload">
+    <CLASSES>
+      <root url="jar://F:/快捷方式/else/jar包/文件上传需要的jar/commons-fileupload-1.2.2.jar!/" />
+      <root url="jar://F:/快捷方式/else/jar包/文件上传需要的jar/commons-io-2.4.jar!/" />
+      <root url="jar://F:/快捷方式/else/jar包/文件上传需要的jar/commons-lang-2.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

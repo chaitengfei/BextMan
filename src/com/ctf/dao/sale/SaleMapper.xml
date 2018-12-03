@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ctf.dao.sale.SaleMapper">
+
+    <insert id="insertSale">
+                  INSERT INTO sale
+            (price, quantity, totalPrice, saleDate,  userId,  productId )
+            VALUES(#{price},  #{quantity},#{totalPrice}, #{saleDate},  #{userId}, #{productId});
+    </insert>
+    <select id="getSaleList" resultType="com.ctf.entity.Sale">
+        SELECT s.price,
+                s.quantity,
+                s.totalPrice,
+                s.saleDate,
+                s.userId,(select u.userName from users u where u.Id =s.userId) as userName1,
+                s.productId,(select p.productName from product p where p.Id =s.productId) as proName
+            FROM
+            sale s
+            order by totalPrice DESC
+        limit #{startIndex},#{pageSize}
+    </select>
+    <select id="getSaleCount" resultType="int">
+        select count(1) from sale
+    </select>
+
+
+</mapper>
